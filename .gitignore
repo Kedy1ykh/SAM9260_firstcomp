@@ -1,0 +1,5 @@
+# Ignore backup
+_autosave-sam9260_qfp-backups/
+_autosave-sam9260_qfp.kicad_prl
+_autosave-sam9260_qfp.kicad_pro
+SAM9260_QFP/sam9260_qfp/sam9260_qfp-backups/
