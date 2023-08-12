@@ -1094,6 +1094,58 @@
         )
       )
     )
+    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3.3V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3.3V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3.3V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1304,9 +1356,6 @@
   (junction (at 21.59 168.91) (diameter 0) (color 0 0 0 0)
     (uuid 33880f62-9be9-40ff-99b5-71a7a6f33863)
   )
-  (junction (at 271.78 36.83) (diameter 0) (color 0 0 0 0)
-    (uuid 35ca7a60-8b4c-4325-9fa3-e9cba2819cc3)
-  )
   (junction (at 270.51 99.06) (diameter 0) (color 0 0 0 0)
     (uuid 3cf298a5-ec6e-4e6f-80ab-d8a5d9508b14)
   )
@@ -1361,9 +1410,6 @@
   (junction (at 195.58 39.37) (diameter 0) (color 0 0 0 0)
     (uuid 852d7c17-8b68-4aa7-a359-047ca3080dac)
   )
-  (junction (at 273.05 81.28) (diameter 0) (color 0 0 0 0)
-    (uuid 8840e110-6576-4e44-981a-332130f05718)
-  )
   (junction (at 191.77 83.82) (diameter 0) (color 0 0 0 0)
     (uuid 892cabbb-09e6-420e-8f13-4bc9dfdb5169)
   )
@@ -1375,9 +1421,6 @@
   )
   (junction (at 93.98 78.74) (diameter 0) (color 0 0 0 0)
     (uuid 8d7afd89-bca4-4924-80ce-be9ff4f70e6e)
-  )
-  (junction (at 22.86 102.87) (diameter 0) (color 0 0 0 0)
-    (uuid 91fcd0af-c906-4c18-8712-81b73984adbd)
   )
   (junction (at 190.5 39.37) (diameter 0) (color 0 0 0 0)
     (uuid 92aa824c-e4ce-4fec-9e5d-bf2d9ea581f6)
@@ -1465,11 +1508,11 @@
   )
 
   (no_connect (at 166.37 139.7) (uuid 0c3de096-192a-42b9-a2e1-06d46b5bbaca))
+  (no_connect (at 270.51 78.74) (uuid 22253309-e1c9-4184-9994-84ad7c8d8fd4))
   (no_connect (at 166.37 152.4) (uuid 231b4958-3a8b-4374-bdff-6ded3dcf562b))
   (no_connect (at 166.37 157.48) (uuid 2f610370-f948-4a8c-9e19-b96e67477f59))
-  (no_connect (at 166.37 137.16) (uuid 439faa22-9015-410c-8ed1-382485b7b486))
+  (no_connect (at 269.24 34.29) (uuid 38475917-e48e-4062-b859-34e7fddf3eba))
   (no_connect (at 166.37 154.94) (uuid c091590a-74b4-4be6-9aae-290b6568047b))
-  (no_connect (at 166.37 149.86) (uuid e9f45ccd-eea9-472c-83bb-56a445489771))
   (no_connect (at 166.37 142.24) (uuid f662e34d-ffba-4bcd-82ae-731f9c68425e))
   (no_connect (at 166.37 144.78) (uuid faefd2a4-0606-47e4-9ffa-abda4c1363f2))
 
@@ -1488,6 +1531,10 @@
   (wire (pts (xy 250.19 130.81) (xy 250.19 132.08))
     (stroke (width 0) (type default))
     (uuid 05f1cc5b-af25-4e2f-be7f-6bcfbb25ef87)
+  )
+  (wire (pts (xy 177.8 149.86) (xy 182.88 149.86))
+    (stroke (width 0) (type default))
+    (uuid 06c6474b-c932-47d0-b59f-ded30977cc7c)
   )
   (wire (pts (xy 270.51 99.06) (xy 260.35 99.06))
     (stroke (width 0) (type default))
@@ -1530,10 +1577,6 @@
     (uuid 0f6834aa-c04a-4d0c-a48f-c76e84953702)
   )
 
-  (wire (pts (xy 270.51 78.74) (xy 273.05 78.74))
-    (stroke (width 0) (type default))
-    (uuid 0fb9b998-182a-4c61-8306-17094e515e79)
-  )
   (wire (pts (xy 57.15 128.27) (xy 21.59 128.27))
     (stroke (width 0) (type default))
     (uuid 0fef10b5-a305-4861-a4d0-40d17fb9c9e3)
@@ -1543,7 +1586,7 @@
     (uuid 107d970d-b651-4f14-adef-f13a328e42bb)
   )
 
-  (wire (pts (xy 22.86 87.63) (xy 22.86 90.17))
+  (wire (pts (xy 22.86 87.63) (xy 22.86 102.87))
     (stroke (width 0) (type default))
     (uuid 10d4365a-b309-4943-952e-0caf2b24b8af)
   )
@@ -1582,10 +1625,6 @@
   (wire (pts (xy 250.19 147.32) (xy 247.65 147.32))
     (stroke (width 0) (type default))
     (uuid 1af17612-d976-4667-97b2-d1e4dfd318c4)
-  )
-  (wire (pts (xy 22.86 118.11) (xy 22.86 120.65))
-    (stroke (width 0) (type default))
-    (uuid 1b3038e9-a0c7-4fbe-ad1b-ecf7a3254098)
   )
   (wire (pts (xy 85.09 172.72) (xy 78.74 172.72))
     (stroke (width 0) (type default))
@@ -1639,10 +1678,6 @@
     (stroke (width 0) (type default))
     (uuid 2681aba3-a775-458a-96e3-e36d5ab0ca38)
   )
-  (wire (pts (xy 278.13 99.06) (xy 278.13 101.6))
-    (stroke (width 0) (type default))
-    (uuid 279635e1-3449-4440-847e-1a327f205efd)
-  )
   (wire (pts (xy 267.97 156.21) (xy 265.43 156.21))
     (stroke (width 0) (type default))
     (uuid 27c46908-441e-41d0-b505-114893283077)
@@ -1679,6 +1714,10 @@
     (stroke (width 0) (type default))
     (uuid 2bdaefd4-f5d1-4aaa-8a4c-4d95d77edb66)
   )
+  (wire (pts (xy 177.8 137.16) (xy 182.88 137.16))
+    (stroke (width 0) (type default))
+    (uuid 2dd6ba1f-9357-4e7f-9c11-893f1eda1fb4)
+  )
   (wire (pts (xy 217.17 124.46) (xy 217.17 125.73))
     (stroke (width 0) (type default))
     (uuid 2f41b5cb-7848-4258-a194-c3bc619c657d)
@@ -1698,6 +1737,10 @@
   (wire (pts (xy 41.91 113.03) (xy 41.91 110.49))
     (stroke (width 0) (type default))
     (uuid 3533a6e7-5b40-4ff4-9bb0-c2ae48702bd5)
+  )
+  (wire (pts (xy 182.88 137.16) (xy 182.88 140.97))
+    (stroke (width 0) (type default))
+    (uuid 362fee76-b5ac-4e4f-ab43-e47ba96136bc)
   )
   (wire (pts (xy 21.59 148.59) (xy 33.02 148.59))
     (stroke (width 0) (type default))
@@ -1743,7 +1786,7 @@
     (stroke (width 0) (type default))
     (uuid 3f7516d8-cc02-4d1e-9585-721c676bf28e)
   )
-  (polyline (pts (xy 172.72 80.01) (xy 186.69 80.01))
+  (polyline (pts (xy 172.72 80.01) (xy 185.42 80.01))
     (stroke (width 0) (type default))
     (uuid 3f863af2-cb16-46fa-98ed-1efeea699a27)
   )
@@ -1759,10 +1802,6 @@
   (wire (pts (xy 69.85 147.32) (xy 63.5 147.32))
     (stroke (width 0) (type default))
     (uuid 4257a379-4c7d-453b-81a8-bf7223467a3c)
-  )
-  (wire (pts (xy 270.51 81.28) (xy 273.05 81.28))
-    (stroke (width 0) (type default))
-    (uuid 434c67d7-18c8-4577-8432-a37a5e6d5adc)
   )
   (wire (pts (xy 43.18 133.35) (xy 50.8 133.35))
     (stroke (width 0) (type default))
@@ -1808,23 +1847,15 @@
     (stroke (width 0) (type default))
     (uuid 4fccee86-40bc-4d3c-851b-ef185cfcd92c)
   )
-  (wire (pts (xy 271.78 36.83) (xy 278.13 36.83))
-    (stroke (width 0) (type default))
-    (uuid 50034cc9-bc5b-43bc-b341-98bd9bbae237)
-  )
   (wire (pts (xy 97.79 162.56) (xy 97.79 163.83))
     (stroke (width 0) (type default))
     (uuid 50eb73af-75b8-4b3c-ade6-96c11d7fba83)
-  )
-  (wire (pts (xy 22.86 102.87) (xy 22.86 110.49))
-    (stroke (width 0) (type default))
-    (uuid 519dbb3c-d0fb-4da7-9a33-92ae5ed9ba5f)
   )
   (wire (pts (xy 256.54 119.38) (xy 256.54 120.65))
     (stroke (width 0) (type default))
     (uuid 52382acd-c79f-4f5c-8cc3-f280515d2060)
   )
-  (wire (pts (xy 269.24 36.83) (xy 271.78 36.83))
+  (wire (pts (xy 269.24 36.83) (xy 278.13 36.83))
     (stroke (width 0) (type default))
     (uuid 53c9ad1a-c593-4334-8f57-50e034441f25)
   )
@@ -1856,6 +1887,10 @@
     (stroke (width 0) (type default))
     (uuid 56d362b8-5117-41d7-8160-35158556d56f)
   )
+  (wire (pts (xy 278.13 99.06) (xy 278.13 101.6))
+    (stroke (width 0) (type default))
+    (uuid 588f7639-6503-4aee-a6b4-e7dad585d83f)
+  )
   (wire (pts (xy 110.49 119.38) (xy 80.01 119.38))
     (stroke (width 0) (type default))
     (uuid 595da40c-272d-490d-b23e-e6b579b620c9)
@@ -1880,6 +1915,10 @@
   (wire (pts (xy 57.15 137.16) (xy 57.15 128.27))
     (stroke (width 0) (type default))
     (uuid 5bcc6eb9-e99d-4300-b2e7-af4c30c3d760)
+  )
+  (wire (pts (xy 182.88 149.86) (xy 182.88 152.4))
+    (stroke (width 0) (type default))
+    (uuid 5c1ce73b-6561-4d20-beee-2a90ed897099)
   )
   (wire (pts (xy 250.19 146.05) (xy 247.65 146.05))
     (stroke (width 0) (type default))
@@ -2182,10 +2221,6 @@
     (stroke (width 0) (type default))
     (uuid 9444a3bc-b75f-425c-99d8-1437e69b0b3a)
   )
-  (wire (pts (xy 273.05 78.74) (xy 273.05 81.28))
-    (stroke (width 0) (type default))
-    (uuid 945ece46-e6bc-4103-a44d-0544a14deb8c)
-  )
   (wire (pts (xy 123.19 78.74) (xy 123.19 93.98))
     (stroke (width 0) (type default))
     (uuid 95954c57-ca06-4de3-88c8-9c9795c692e6)
@@ -2274,7 +2309,7 @@
     (stroke (width 0) (type default))
     (uuid a5d19993-9826-423c-92ab-39a6b4109ced)
   )
-  (polyline (pts (xy 186.69 80.01) (xy 186.69 109.22))
+  (polyline (pts (xy 185.42 80.01) (xy 185.42 109.22))
     (stroke (width 0) (type default))
     (uuid a6daf454-4083-47fe-8f0a-f3d61d432321)
   )
@@ -2483,6 +2518,10 @@
     (stroke (width 0) (type default))
     (uuid d1be80b8-d6fb-4752-87f3-277998e04c24)
   )
+  (wire (pts (xy 96.52 102.87) (xy 22.86 102.87))
+    (stroke (width 0) (type default))
+    (uuid d1c76823-b9f5-42bf-be09-b14c1111c285)
+  )
   (wire (pts (xy 31.75 107.95) (xy 31.75 110.49))
     (stroke (width 0) (type default))
     (uuid d1c972a2-198b-4768-9710-54c6cf26652a)
@@ -2495,17 +2534,9 @@
     (stroke (width 0) (type default))
     (uuid d505fde6-718b-4e21-9073-5f582842f080)
   )
-  (wire (pts (xy 22.86 102.87) (xy 22.86 97.79))
-    (stroke (width 0) (type default))
-    (uuid d5bc46c6-260b-41a1-8f84-e477bae6809d)
-  )
   (wire (pts (xy 267.97 148.59) (xy 266.7 148.59))
     (stroke (width 0) (type default))
     (uuid d6c14008-098d-498e-ba88-0e8d6e360600)
-  )
-  (wire (pts (xy 271.78 34.29) (xy 271.78 36.83))
-    (stroke (width 0) (type default))
-    (uuid d784fb59-b393-41f2-9729-f838de55310d)
   )
   (wire (pts (xy 80.01 119.38) (xy 80.01 127))
     (stroke (width 0) (type default))
@@ -2527,13 +2558,13 @@
     (stroke (width 0) (type default))
     (uuid dd046c4d-d581-4d82-b8ba-6a23d85686f3)
   )
-  (wire (pts (xy 269.24 34.29) (xy 271.78 34.29))
-    (stroke (width 0) (type default))
-    (uuid dd50d98f-0e03-4a2a-bf7d-b92afd329301)
-  )
   (wire (pts (xy 250.19 157.48) (xy 243.84 157.48))
     (stroke (width 0) (type default))
     (uuid de6f9ba5-b3e2-49d5-bd6e-5c4a2c6101ad)
+  )
+  (wire (pts (xy 166.37 137.16) (xy 170.18 137.16))
+    (stroke (width 0) (type default))
+    (uuid e01d79b0-b7cd-4c63-bdb9-79135bec23dd)
   )
   (wire (pts (xy 226.06 135.89) (xy 226.06 134.62))
     (stroke (width 0) (type default))
@@ -2567,6 +2598,10 @@
   (wire (pts (xy 199.39 55.88) (xy 199.39 58.42))
     (stroke (width 0) (type default))
     (uuid ea931908-5341-4e5e-9a7a-64a20a4bc69e)
+  )
+  (wire (pts (xy 166.37 149.86) (xy 170.18 149.86))
+    (stroke (width 0) (type default))
+    (uuid eaa355c7-0208-44df-b9f6-25d3805cf0cb)
   )
   (wire (pts (xy 63.5 161.29) (xy 63.5 165.1))
     (stroke (width 0) (type default))
@@ -2613,10 +2648,6 @@
     (stroke (width 0) (type default))
     (uuid f3a56131-d8a7-4736-a972-7629faa13405)
   )
-  (wire (pts (xy 22.86 102.87) (xy 96.52 102.87))
-    (stroke (width 0) (type default))
-    (uuid f4ae8de2-1884-4606-ad9d-905fad43ae34)
-  )
   (wire (pts (xy 198.12 16.51) (xy 201.93 16.51))
     (stroke (width 0) (type default))
     (uuid f507aeab-a29f-4906-9098-f36a7c1d064b)
@@ -2654,7 +2685,7 @@
     (stroke (width 0) (type default))
     (uuid fa38d323-9e48-4b2b-98a1-a2775c5963aa)
   )
-  (polyline (pts (xy 186.69 109.22) (xy 281.94 109.22))
+  (polyline (pts (xy 185.42 109.22) (xy 281.94 109.22))
     (stroke (width 0) (type default))
     (uuid fac1efaf-78ad-41aa-a29d-9cdd1faa1eed)
   )
@@ -2671,7 +2702,7 @@
     (stroke (width 0) (type default))
     (uuid fb5eaf6e-c1d5-483b-93e9-2190c92b3bf6)
   )
-  (wire (pts (xy 273.05 81.28) (xy 279.4 81.28))
+  (wire (pts (xy 270.51 81.28) (xy 279.4 81.28))
     (stroke (width 0) (type default))
     (uuid fc048958-92dd-4654-82d9-da74846ca4f7)
   )
@@ -2706,8 +2737,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8e2cacee-65f4-40c7-9ca2-bf933f935879)
   )
-  (text "VBUS_DET is 3v3 \ndevice so we need to \ndivide it down with \n2 x 100kR"
-    (at 86.36 102.87 0)
+  (text "Permanent attached host\nConnect to host 3.3V" (at 80.01 101.6 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e0e63e8f-abfc-428a-8ae1-a1f77c5859b3)
   )
@@ -2715,6 +2745,18 @@
   (label "5V_FILT" (at 41.91 109.22 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0d45d965-50f3-43ea-b60a-3c475f9256b6)
+  )
+  (label "5V_FILT2" (at 256.54 144.78 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 10ccd909-81df-41b2-a1d2-0515f070851b)
+  )
+  (label "5V_FILT1" (at 256.54 119.38 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 16e5de17-bd5b-45f2-a9ee-5de08f42a4f0)
+  )
+  (label "5V_PORT1" (at 243.84 119.38 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 230bfaa1-dee6-4eb4-8620-58033879352c)
   )
   (label "VBUS_DET" (at 41.91 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2724,13 +2766,53 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3a5199ee-e8ae-4ef5-9456-abbd5e471c4c)
   )
+  (label "USB_HUB1_N" (at 182.88 111.76 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 41b97f3c-1ab3-4971-aa50-1fdfa0f591c1)
+  )
   (label "PORT1_ILIM" (at 198.12 21.59 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 524c0e06-f15e-4416-9e7d-1edbae113010)
   )
+  (label "5V_PORT1" (at 276.86 57.15 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 809b7038-79c7-4c4d-8967-7aa7f41593c3)
+  )
+  (label "+3V3" (at 99.06 111.76 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 8ba0ef0b-a074-4781-9699-ac9788253aa4)
+  )
+  (label "USB_BOARD_N" (at 95.25 116.84 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 8e59c381-3363-44f2-83ea-0b16d81d751e)
+  )
+  (label "5V_PORT2" (at 243.84 144.78 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 91fce6fc-edc9-4065-8d15-f4b47b02b0f7)
+  )
+  (label "USB_HUB1_P" (at 182.88 114.3 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 95333f64-6f96-45a8-966a-a556362d2943)
+  )
+  (label "RESET_USB" (at 95.25 124.46 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 967df1cf-64c4-4750-a792-96b3713bb203)
+  )
   (label "USB_HUB_NOCS2" (at 223.52 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9fe593ad-d09f-469b-9a60-7a319e1d09f0)
+  )
+  (label "USB_HUB2_N" (at 175.26 124.46 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 9fe89d7f-b106-4b98-9246-29e6bf2b8804)
+  )
+  (label "USB_BOARD_P" (at 95.25 119.38 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid a0b80db4-eb3e-455a-a830-dffbb0ba2328)
+  )
+  (label "5V_PORT2" (at 278.13 101.6 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid a3fadfe2-0e82-42d6-9fa3-1961a52e4309)
   )
   (label "PORT2_ILIM" (at 199.39 66.04 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2740,13 +2822,17 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c4a80c04-876a-409e-a006-45c64bf07767)
   )
-  (label "5V_FILT" (at 186.69 82.55 0) (fields_autoplaced)
+  (label "5V_FILT2" (at 186.69 82.55 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c5d68c6d-4892-470c-b0c3-68c41fd96513)
   )
-  (label "5V_FILT" (at 185.42 38.1 0) (fields_autoplaced)
+  (label "5V_FILT1" (at 185.42 38.1 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fa05e3f4-88e6-4521-8ae5-562a3e3e2c49)
+  )
+  (label "USB_HUB2_P" (at 175.26 127 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid fed2cfe7-6a98-4a78-a7b5-461f9aa971fe)
   )
 
   (global_label "USB_HUB_NOCS1" (shape input) (at 166.37 119.38 0) (fields_autoplaced)
@@ -2760,6 +2846,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 12ee33c5-4fd9-4f50-91cb-8b3580b38cee)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 188.6193 129.6194 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "VDD_IOPO" (shape input) (at 22.86 87.63 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 1cee9e15-28ff-40bc-82b5-aeb3697525a1)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 34.8978 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2809,7 +2902,7 @@
   (symbol (lib_id "power:+5V") (at 278.13 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03009068-41df-4c02-a3bd-910fc53f7696)
-    (property "Reference" "#PWR0146" (at 278.13 102.87 0)
+    (property "Reference" "#PWR0155" (at 278.13 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 278.13 95.25 0)
@@ -2825,7 +2918,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0146") (unit 1)
+          (reference "#PWR0155") (unit 1)
         )
       )
     )
@@ -2834,7 +2927,7 @@
   (symbol (lib_id "Device:C") (at 78.74 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0382dab9-fc6c-4847-b2c9-7cb2d1533c38)
-    (property "Reference" "C310" (at 80.01 83.82 0)
+    (property "Reference" "C210" (at 80.01 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 80.01 88.9 0)
@@ -2851,7 +2944,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C310") (unit 1)
+          (reference "C210") (unit 1)
         )
       )
     )
@@ -2860,7 +2953,7 @@
   (symbol (lib_id "power:+5V") (at 186.69 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0547272f-0fa8-48f3-bf4f-291570a80e9d)
-    (property "Reference" "#PWR0138" (at 186.69 83.82 0)
+    (property "Reference" "#PWR0158" (at 186.69 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 186.69 76.2 0)
@@ -2876,7 +2969,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0138") (unit 1)
+          (reference "#PWR0158") (unit 1)
         )
       )
     )
@@ -2885,7 +2978,7 @@
   (symbol (lib_id "Device:C") (at 71.12 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 06d6a5ab-b8cc-4e2c-bd2a-02a63d225d4e)
-    (property "Reference" "C309" (at 72.39 83.82 0)
+    (property "Reference" "C209" (at 72.39 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2u2" (at 72.39 88.9 0)
@@ -2902,7 +2995,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C309") (unit 1)
+          (reference "C209") (unit 1)
         )
       )
     )
@@ -2911,7 +3004,7 @@
   (symbol (lib_id "Device:C") (at 250.19 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 098f13a3-c0fe-4da0-b31e-9181b712152f)
-    (property "Reference" "C321" (at 251.46 149.86 0)
+    (property "Reference" "C221" (at 251.46 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100u" (at 251.46 154.94 0)
@@ -2928,33 +3021,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C321") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 22.86 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0bba6616-3765-46fc-ab59-f1bdf24caef4)
-    (property "Reference" "R302" (at 24.13 113.03 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100k" (at 24.13 115.57 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 21.082 114.3 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 22.86 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 01c7f05b-2a88-4455-91b1-adc3b6452830))
-    (pin "2" (uuid fc2ac93f-c1cc-423c-b00c-8412bf9e5268))
-    (instances
-      (project "sam9260_qfp"
-        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R302") (unit 1)
+          (reference "C221") (unit 1)
         )
       )
     )
@@ -2963,7 +3030,7 @@
   (symbol (lib_id "Connector:USB_A") (at 275.59 151.13 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0d764cad-e228-40be-a361-e03c071596d4)
-    (property "Reference" "J302" (at 279.4 142.24 0)
+    (property "Reference" "J202" (at 279.4 142.24 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB_A" (at 275.59 160.02 0)
@@ -2983,7 +3050,33 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "J302") (unit 1)
+          (reference "J202") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 173.99 149.86 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1034eecc-69bd-4a05-b750-efdedee07011)
+    (property "Reference" "R216" (at 173.99 147.32 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10k" (at 177.8 152.4 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 173.99 151.638 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 173.99 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bbe0e147-e314-4b0e-8ee8-9a584f1edb9c))
+    (pin "2" (uuid a3d8ffa1-fc4c-4e07-919d-a77e8334325b))
+    (instances
+      (project "sam9260_qfp"
+        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
+          (reference "R216") (unit 1)
         )
       )
     )
@@ -2992,7 +3085,7 @@
   (symbol (lib_id "Device:R") (at 85.09 162.56 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 10e3b3ad-e5d7-46c0-945a-7c23eb6e40c2)
-    (property "Reference" "R305" (at 88.9 160.02 0)
+    (property "Reference" "R205" (at 88.9 160.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 90.17 166.37 0)
@@ -3009,7 +3102,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R305") (unit 1)
+          (reference "R205") (unit 1)
         )
       )
     )
@@ -3018,7 +3111,7 @@
   (symbol (lib_id "power:GND") (at 191.77 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 124c93fd-97d3-4bde-8db1-b7d8b0bcf5fe)
-    (property "Reference" "#PWR0129" (at 191.77 109.22 0)
+    (property "Reference" "#PWR0170" (at 191.77 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 191.77 106.68 0)
@@ -3034,7 +3127,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0129") (unit 1)
+          (reference "#PWR0170") (unit 1)
         )
       )
     )
@@ -3043,7 +3136,7 @@
   (symbol (lib_id "Device:R") (at 199.39 71.12 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1307c4e7-a425-4bab-adef-5e1aef14ea81)
-    (property "Reference" "R311" (at 203.2 67.31 0)
+    (property "Reference" "R211" (at 203.2 67.31 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 205.74 74.93 0)
@@ -3060,7 +3153,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R311") (unit 1)
+          (reference "R211") (unit 1)
         )
       )
     )
@@ -3069,7 +3162,7 @@
   (symbol (lib_id "power:GND") (at 267.97 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 14f74d30-15f8-4b9b-a75a-2df2d9a50592)
-    (property "Reference" "#PWR0134" (at 267.97 146.05 0)
+    (property "Reference" "#PWR0167" (at 267.97 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 267.97 143.51 0)
@@ -3085,7 +3178,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0134") (unit 1)
+          (reference "#PWR0167") (unit 1)
         )
       )
     )
@@ -3094,7 +3187,7 @@
   (symbol (lib_id "Power_Protection:USBLC6-2SC6") (at 60.96 115.57 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 159dd422-2b83-4eea-9871-29a6b8be2c49)
-    (property "Reference" "U301" (at 67.31 106.68 90)
+    (property "Reference" "U201" (at 67.31 106.68 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "USBLC6-2SC6" (at 78.74 124.46 90)
@@ -3115,7 +3208,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "U301") (unit 1)
+          (reference "U201") (unit 1)
         )
       )
     )
@@ -3124,7 +3217,7 @@
   (symbol (lib_id "Device:C") (at 31.75 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 185b118a-cb22-4adb-b1b8-45714a80fb1a)
-    (property "Reference" "C302" (at 34.29 115.57 0)
+    (property "Reference" "C202" (at 34.29 115.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2u2" (at 34.29 118.11 0)
@@ -3141,7 +3234,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C302") (unit 1)
+          (reference "C202") (unit 1)
         )
       )
     )
@@ -3150,7 +3243,7 @@
   (symbol (lib_id "Device:C") (at 93.98 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1d3e3537-e0e8-4de1-822d-dc9d6bd17529)
-    (property "Reference" "C312" (at 95.25 83.82 0)
+    (property "Reference" "C212" (at 95.25 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 95.25 88.9 0)
@@ -3167,7 +3260,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C312") (unit 1)
+          (reference "C212") (unit 1)
         )
       )
     )
@@ -3176,7 +3269,7 @@
   (symbol (lib_id "power:GND") (at 71.12 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1e5368ab-3bfb-4bd7-8148-a02be7f193d3)
-    (property "Reference" "#PWR0152" (at 71.12 101.6 0)
+    (property "Reference" "#PWR0180" (at 71.12 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 71.12 100.33 0)
@@ -3192,7 +3285,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0152") (unit 1)
+          (reference "#PWR0180") (unit 1)
         )
       )
     )
@@ -3201,7 +3294,7 @@
   (symbol (lib_id "Device:LED") (at 269.24 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1f54f372-e711-4e10-9fdd-d99bc7d632a1)
-    (property "Reference" "D301" (at 266.7 49.53 90)
+    (property "Reference" "D201" (at 266.7 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "GREEN" (at 265.43 52.07 90)
@@ -3218,7 +3311,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "D301") (unit 1)
+          (reference "D201") (unit 1)
         )
       )
     )
@@ -3227,7 +3320,7 @@
   (symbol (lib_id "Device:R") (at 31.75 133.35 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 205b9bab-3e25-4d0d-b043-28b65c843419)
-    (property "Reference" "R303" (at 31.75 130.81 90)
+    (property "Reference" "R203" (at 31.75 130.81 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DNP_1M" (at 35.56 135.89 90)
@@ -3244,7 +3337,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R303") (unit 1)
+          (reference "R203") (unit 1)
         )
       )
     )
@@ -3253,7 +3346,7 @@
   (symbol (lib_id "Device:C") (at 101.6 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 24b6a3f3-462a-44f1-84de-cd864856d100)
-    (property "Reference" "C313" (at 102.87 83.82 0)
+    (property "Reference" "C213" (at 102.87 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 102.87 88.9 0)
@@ -3270,7 +3363,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C313") (unit 1)
+          (reference "C213") (unit 1)
         )
       )
     )
@@ -3279,7 +3372,7 @@
   (symbol (lib_id "power:+5V") (at 276.86 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2693ab93-02fc-47cc-b3cf-bf304f9377f1)
-    (property "Reference" "#PWR0145" (at 276.86 58.42 0)
+    (property "Reference" "#PWR0153" (at 276.86 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 276.86 50.8 0)
@@ -3295,7 +3388,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0145") (unit 1)
+          (reference "#PWR0153") (unit 1)
         )
       )
     )
@@ -3304,7 +3397,7 @@
   (symbol (lib_id "power:+5V") (at 31.75 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2865bdc7-0650-4062-a6c8-eebb5315e62e)
-    (property "Reference" "#PWR0160" (at 31.75 111.76 0)
+    (property "Reference" "#PWR0183" (at 31.75 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 31.75 104.14 0)
@@ -3320,7 +3413,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0160") (unit 1)
+          (reference "#PWR0183") (unit 1)
         )
       )
     )
@@ -3329,7 +3422,7 @@
   (symbol (lib_id "Device:R") (at 78.74 160.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2bf3d325-e573-40d6-bf2c-1b7d2df6ebe4)
-    (property "Reference" "R304" (at 82.55 157.48 0)
+    (property "Reference" "R204" (at 82.55 157.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 83.82 163.83 0)
@@ -3346,7 +3439,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R304") (unit 1)
+          (reference "R204") (unit 1)
         )
       )
     )
@@ -3355,7 +3448,7 @@
   (symbol (lib_id "power:GND") (at 90.17 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2f1c6546-ea43-47bc-ad3e-d9c0a392a7ec)
-    (property "Reference" "#PWR0158" (at 90.17 138.43 0)
+    (property "Reference" "#PWR0176" (at 90.17 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 135.89 0)
@@ -3371,7 +3464,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0158") (unit 1)
+          (reference "#PWR0176") (unit 1)
         )
       )
     )
@@ -3380,7 +3473,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 252.73 146.05 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 30f38586-9a31-4c36-921b-512e4e70cf92)
-    (property "Reference" "FB303" (at 252.73 143.51 90)
+    (property "Reference" "FB203" (at 252.73 143.51 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120R" (at 255.27 147.32 90)
@@ -3397,7 +3490,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "FB303") (unit 1)
+          (reference "FB203") (unit 1)
         )
       )
     )
@@ -3406,7 +3499,7 @@
   (symbol (lib_id "power:+5V") (at 41.91 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 34b847f3-4ed1-40b4-9be4-270e32f514a4)
-    (property "Reference" "#PWR0162" (at 41.91 111.76 0)
+    (property "Reference" "#PWR0182" (at 41.91 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 41.91 104.14 0)
@@ -3422,7 +3515,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0162") (unit 1)
+          (reference "#PWR0182") (unit 1)
         )
       )
     )
@@ -3431,7 +3524,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 252.73 120.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 36e50ce4-a2fe-4a24-89f8-6784a9a6fbe4)
-    (property "Reference" "FB302" (at 252.73 118.11 90)
+    (property "Reference" "FB202" (at 252.73 118.11 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120R" (at 255.27 121.92 90)
@@ -3448,7 +3541,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "FB302") (unit 1)
+          (reference "FB202") (unit 1)
         )
       )
     )
@@ -3457,7 +3550,7 @@
   (symbol (lib_id "Device:R") (at 255.27 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3c020f5b-4ddc-4496-afc6-3a2cfa53d134)
-    (property "Reference" "R313" (at 256.54 52.07 90)
+    (property "Reference" "R213" (at 256.54 52.07 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 255.27 57.15 90)
@@ -3474,32 +3567,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R313") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 22.86 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3f0a47c9-21ea-41e3-bc09-80bf7417709c)
-    (property "Reference" "#PWR0154" (at 22.86 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 22.86 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 22.86 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 22.86 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 154577c8-d849-49a7-8d66-807f892b0436))
-    (instances
-      (project "sam9260_qfp"
-        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0154") (unit 1)
+          (reference "R213") (unit 1)
         )
       )
     )
@@ -3508,7 +3576,7 @@
   (symbol (lib_id "Device:C") (at 41.91 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41012c40-b7fc-4dbb-9e29-87872ddd245b)
-    (property "Reference" "C303" (at 44.45 115.57 0)
+    (property "Reference" "C203" (at 44.45 115.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2u2" (at 44.45 118.11 0)
@@ -3525,7 +3593,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C303") (unit 1)
+          (reference "C203") (unit 1)
         )
       )
     )
@@ -3534,7 +3602,7 @@
   (symbol (lib_id "power:GND") (at 217.17 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 45664071-2a45-4f9e-b79b-3001f1c92f20)
-    (property "Reference" "#PWR0136" (at 217.17 132.08 0)
+    (property "Reference" "#PWR0165" (at 217.17 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 217.17 129.54 0)
@@ -3550,7 +3618,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0136") (unit 1)
+          (reference "#PWR0165") (unit 1)
         )
       )
     )
@@ -3559,7 +3627,7 @@
   (symbol (lib_id "Device:R") (at 91.44 165.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 49b0bf3e-ebbd-4033-bda6-6ecec84d444d)
-    (property "Reference" "R306" (at 95.25 162.56 0)
+    (property "Reference" "R206" (at 95.25 162.56 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 96.52 168.91 0)
@@ -3576,32 +3644,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R306") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 22.86 87.63 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4a6d9410-e3c2-422c-a1b8-18fd1faf9608)
-    (property "Reference" "#PWR0155" (at 22.86 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 22.86 83.82 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 22.86 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 22.86 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 566408a3-6bc0-4fb8-aba8-be316018ec02))
-    (instances
-      (project "sam9260_qfp"
-        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0155") (unit 1)
+          (reference "R206") (unit 1)
         )
       )
     )
@@ -3610,7 +3653,7 @@
   (symbol (lib_id "power:GND") (at 248.92 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4eef97f4-d5a3-4a20-942c-36820b8b6db1)
-    (property "Reference" "#PWR0130" (at 242.57 99.06 0)
+    (property "Reference" "#PWR0169" (at 242.57 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 100.33 90)
@@ -3626,7 +3669,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0130") (unit 1)
+          (reference "#PWR0169") (unit 1)
         )
       )
     )
@@ -3635,7 +3678,7 @@
   (symbol (lib_id "Power_Protection:USBLC6-2SC6") (at 228.6 124.46 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 54b27582-f60f-4d9f-867b-5dcc7b967b3e)
-    (property "Reference" "U305" (at 222.25 133.35 90)
+    (property "Reference" "U205" (at 222.25 133.35 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "USBLC6-2SC6" (at 210.82 115.57 90)
@@ -3656,7 +3699,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "U305") (unit 1)
+          (reference "U205") (unit 1)
         )
       )
     )
@@ -3665,7 +3708,7 @@
   (symbol (lib_id "Device:R") (at 256.54 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5abf2a72-c254-4ee1-959c-ca2b718d6fe4)
-    (property "Reference" "R314" (at 257.81 96.52 90)
+    (property "Reference" "R214" (at 257.81 96.52 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 256.54 101.6 90)
@@ -3682,7 +3725,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R314") (unit 1)
+          (reference "R214") (unit 1)
         )
       )
     )
@@ -3691,7 +3734,7 @@
   (symbol (lib_id "power:+3V3") (at 81.28 127 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e8f9c03-55e0-487b-8cfc-ce55046bc1bf)
-    (property "Reference" "#PWR0159" (at 81.28 123.19 0)
+    (property "Reference" "#PWR0178" (at 81.28 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 80.01 130.81 0)
@@ -3707,7 +3750,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0159") (unit 1)
+          (reference "#PWR0178") (unit 1)
         )
       )
     )
@@ -3716,7 +3759,7 @@
   (symbol (lib_id "power:GND") (at 201.93 16.51 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f2a2133-60c2-4152-8cfc-3f1c6076fdaf)
-    (property "Reference" "#PWR0148" (at 208.28 16.51 0)
+    (property "Reference" "#PWR0161" (at 208.28 16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 19.05 90)
@@ -3732,7 +3775,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0148") (unit 1)
+          (reference "#PWR0161") (unit 1)
         )
       )
     )
@@ -3741,7 +3784,7 @@
   (symbol (lib_id "power:GND") (at 203.2 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f2a79de-1d6f-4333-8990-1895a36b2742)
-    (property "Reference" "#PWR0150" (at 209.55 60.96 0)
+    (property "Reference" "#PWR0160" (at 209.55 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.01 63.5 90)
@@ -3757,7 +3800,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0150") (unit 1)
+          (reference "#PWR0160") (unit 1)
         )
       )
     )
@@ -3766,7 +3809,7 @@
   (symbol (lib_id "power:+5V") (at 243.84 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f4d6f5d-8d60-4d0a-965a-b6fec02c685d)
-    (property "Reference" "#PWR0141" (at 243.84 148.59 0)
+    (property "Reference" "#PWR0150" (at 243.84 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 243.84 140.97 0)
@@ -3782,7 +3825,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0141") (unit 1)
+          (reference "#PWR0150") (unit 1)
         )
       )
     )
@@ -3791,7 +3834,7 @@
   (symbol (lib_id "2023-03-19_05-17-35:MIC2099-1YMT-TR") (at 199.39 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6327d300-cd5c-4d46-b706-cb0398fcdadd)
-    (property "Reference" "U304" (at 234.95 67.31 0)
+    (property "Reference" "U204" (at 234.95 67.31 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "MIC2099-1YMT-TR" (at 234.95 71.12 0)
@@ -3813,7 +3856,32 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "U304") (unit 1)
+          (reference "U204") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 182.88 152.4 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 670503f2-39df-4c30-ba46-27e832da2aa5)
+    (property "Reference" "#PWR0219" (at 182.88 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 182.88 157.48 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 182.88 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 182.88 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c0a26269-647e-42c9-a2ad-25005c64a966))
+    (instances
+      (project "sam9260_qfp"
+        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
+          (reference "#PWR0219") (unit 1)
         )
       )
     )
@@ -3822,7 +3890,7 @@
   (symbol (lib_id "Device:C") (at 69.85 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 67f61948-e7c2-43d4-b071-f2b3e4074ae4)
-    (property "Reference" "C308" (at 71.12 154.94 0)
+    (property "Reference" "C208" (at 71.12 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 71.12 160.02 0)
@@ -3839,7 +3907,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C308") (unit 1)
+          (reference "C208") (unit 1)
         )
       )
     )
@@ -3848,7 +3916,7 @@
   (symbol (lib_id "power:GND") (at 21.59 172.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71d8e39c-7ef6-45c3-9256-08d9709380f1)
-    (property "Reference" "#PWR0151" (at 21.59 179.07 0)
+    (property "Reference" "#PWR0172" (at 21.59 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 21.59 177.8 0)
@@ -3864,7 +3932,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0151") (unit 1)
+          (reference "#PWR0172") (unit 1)
         )
       )
     )
@@ -3873,7 +3941,7 @@
   (symbol (lib_id "Device:R") (at 198.12 26.67 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 72fab95e-44d4-488a-9399-56f983b6a8d1)
-    (property "Reference" "R309" (at 201.93 22.86 0)
+    (property "Reference" "R209" (at 201.93 22.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 204.47 30.48 0)
@@ -3890,7 +3958,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R309") (unit 1)
+          (reference "R209") (unit 1)
         )
       )
     )
@@ -3899,7 +3967,7 @@
   (symbol (lib_id "Device:C") (at 57.15 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 78c8dab8-b1bc-4b6a-903f-1f1ad319554a)
-    (property "Reference" "C306" (at 58.42 154.94 0)
+    (property "Reference" "C206" (at 58.42 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 58.42 160.02 0)
@@ -3916,7 +3984,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C306") (unit 1)
+          (reference "C206") (unit 1)
         )
       )
     )
@@ -3925,7 +3993,7 @@
   (symbol (lib_id "power:GND") (at 243.84 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7a172f75-7195-4fdb-82a3-ef32805c583a)
-    (property "Reference" "#PWR0143" (at 243.84 163.83 0)
+    (property "Reference" "#PWR0168" (at 243.84 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 161.29 0)
@@ -3941,7 +4009,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0143") (unit 1)
+          (reference "#PWR0168") (unit 1)
         )
       )
     )
@@ -3950,7 +4018,7 @@
   (symbol (lib_id "Device:C") (at 256.54 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c6c0c1e-dd35-467c-bf3c-7573c3ce1693)
-    (property "Reference" "C322" (at 257.81 124.46 0)
+    (property "Reference" "C222" (at 257.81 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100u" (at 257.81 130.81 0)
@@ -3967,7 +4035,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C322") (unit 1)
+          (reference "C222") (unit 1)
         )
       )
     )
@@ -3976,7 +4044,7 @@
   (symbol (lib_id "Device:C") (at 43.18 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 801120d7-7c6a-4acf-b790-ea42cf55171f)
-    (property "Reference" "C304" (at 44.45 154.94 0)
+    (property "Reference" "C204" (at 44.45 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10p" (at 44.45 160.02 0)
@@ -3993,7 +4061,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C304") (unit 1)
+          (reference "C204") (unit 1)
         )
       )
     )
@@ -4002,7 +4070,7 @@
   (symbol (lib_id "power:GND") (at 215.9 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 803a063f-59cf-4fa0-b25e-bf33d1fd2f95)
-    (property "Reference" "#PWR0135" (at 215.9 157.48 0)
+    (property "Reference" "#PWR0166" (at 215.9 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 215.9 154.94 0)
@@ -4018,7 +4086,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0135") (unit 1)
+          (reference "#PWR0166") (unit 1)
         )
       )
     )
@@ -4027,7 +4095,7 @@
   (symbol (lib_id "Device:C") (at 243.84 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8633484a-7b49-4f83-a0d9-15ab830bd66a)
-    (property "Reference" "C318" (at 245.11 124.46 0)
+    (property "Reference" "C218" (at 245.11 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 245.11 129.54 0)
@@ -4044,7 +4112,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C318") (unit 1)
+          (reference "C218") (unit 1)
         )
       )
     )
@@ -4053,7 +4121,7 @@
   (symbol (lib_id "power:GND") (at 278.13 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c7f0904-2672-406e-b641-d882d9dbeb85)
-    (property "Reference" "#PWR0147" (at 278.13 44.45 0)
+    (property "Reference" "#PWR0154" (at 278.13 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 278.13 41.91 0)
@@ -4069,7 +4137,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0147") (unit 1)
+          (reference "#PWR0154") (unit 1)
         )
       )
     )
@@ -4078,7 +4146,7 @@
   (symbol (lib_id "Device:C") (at 109.22 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c849af7-64ee-4fab-a887-014a978d84a2)
-    (property "Reference" "C314" (at 110.49 83.82 0)
+    (property "Reference" "C214" (at 110.49 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 110.49 88.9 0)
@@ -4095,7 +4163,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C314") (unit 1)
+          (reference "C214") (unit 1)
         )
       )
     )
@@ -4104,7 +4172,7 @@
   (symbol (lib_id "power:+3V3") (at 71.12 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 915c60e4-8dfd-45b7-931d-d8131ccf529a)
-    (property "Reference" "#PWR0153" (at 71.12 80.01 0)
+    (property "Reference" "#PWR0173" (at 71.12 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 71.12 72.39 0)
@@ -4120,7 +4188,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0153") (unit 1)
+          (reference "#PWR0173") (unit 1)
         )
       )
     )
@@ -4129,7 +4197,7 @@
   (symbol (lib_id "Device:C") (at 86.36 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9377cc46-9f6b-4e58-a941-8d37f9013580)
-    (property "Reference" "C311" (at 87.63 83.82 0)
+    (property "Reference" "C211" (at 87.63 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 87.63 88.9 0)
@@ -4146,7 +4214,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C311") (unit 1)
+          (reference "C211") (unit 1)
         )
       )
     )
@@ -4155,7 +4223,7 @@
   (symbol (lib_id "power:GND") (at 72.39 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94c814cb-7a5c-4f56-a269-d3309214af4e)
-    (property "Reference" "#PWR0163" (at 72.39 123.19 0)
+    (property "Reference" "#PWR0177" (at 72.39 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 72.39 120.65 0)
@@ -4171,7 +4239,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0163") (unit 1)
+          (reference "#PWR0177") (unit 1)
         )
       )
     )
@@ -4180,7 +4248,7 @@
   (symbol (lib_id "Device:C") (at 190.5 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9648df69-ab18-4d20-9d61-4d176bb6a46b)
-    (property "Reference" "C316" (at 193.04 50.8 0)
+    (property "Reference" "C216" (at 193.04 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2u2" (at 193.04 53.34 0)
@@ -4197,7 +4265,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C316") (unit 1)
+          (reference "C216") (unit 1)
         )
       )
     )
@@ -4206,7 +4274,7 @@
   (symbol (lib_id "power:GND") (at 243.84 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 99eb2c58-5af6-448e-ae8a-37d3de8c4884)
-    (property "Reference" "#PWR0140" (at 243.84 138.43 0)
+    (property "Reference" "#PWR0149" (at 243.84 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 135.89 0)
@@ -4222,7 +4290,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0140") (unit 1)
+          (reference "#PWR0149") (unit 1)
         )
       )
     )
@@ -4231,7 +4299,7 @@
   (symbol (lib_id "Device:Crystal_GND23") (at 36.83 148.59 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bb0b5e7-030d-47e3-ae4f-e6e6ac7aa69c)
-    (property "Reference" "Y301" (at 34.29 153.67 0)
+    (property "Reference" "Y201" (at 34.29 153.67 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "24MHz" (at 33.02 143.51 0)
@@ -4250,7 +4318,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "Y301") (unit 1)
+          (reference "Y201") (unit 1)
         )
       )
     )
@@ -4259,7 +4327,7 @@
   (symbol (lib_id "power:GND") (at 267.97 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bbc0340-3338-4d63-999f-8a8a9442b34e)
-    (property "Reference" "#PWR0132" (at 267.97 120.65 0)
+    (property "Reference" "#PWR0163" (at 267.97 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 266.7 118.11 0)
@@ -4275,7 +4343,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0132") (unit 1)
+          (reference "#PWR0163") (unit 1)
         )
       )
     )
@@ -4284,7 +4352,7 @@
   (symbol (lib_id "Connector:USB_A") (at 274.32 124.46 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a59de4db-f9e7-4f2a-9c2f-eb0fe8e69a3e)
-    (property "Reference" "J301" (at 278.13 115.57 0)
+    (property "Reference" "J201" (at 278.13 115.57 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB_A" (at 274.32 133.35 0)
@@ -4304,7 +4372,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "J301") (unit 1)
+          (reference "J201") (unit 1)
         )
       )
     )
@@ -4313,7 +4381,7 @@
   (symbol (lib_id "Device:R") (at 200.66 96.52 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a84cf218-45bc-471b-a1c6-dee044eefbb2)
-    (property "Reference" "R312" (at 204.47 92.71 0)
+    (property "Reference" "R212" (at 204.47 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DNP_12k" (at 209.55 100.33 0)
@@ -4330,7 +4398,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R312") (unit 1)
+          (reference "R212") (unit 1)
         )
       )
     )
@@ -4339,7 +4407,7 @@
   (symbol (lib_id "power:GND") (at 31.75 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid acff064a-b4e2-4f02-8f1a-23bb8c06702f)
-    (property "Reference" "#PWR0161" (at 31.75 128.27 0)
+    (property "Reference" "#PWR0181" (at 31.75 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 31.75 125.73 0)
@@ -4355,7 +4423,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0161") (unit 1)
+          (reference "#PWR0181") (unit 1)
         )
       )
     )
@@ -4364,7 +4432,7 @@
   (symbol (lib_id "Device:R") (at 97.79 132.08 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aef17d64-f1ed-4063-b92b-688135aaed69)
-    (property "Reference" "R307" (at 97.79 129.54 90)
+    (property "Reference" "R207" (at 97.79 129.54 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "12k" (at 101.6 134.62 90)
@@ -4381,7 +4449,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R307") (unit 1)
+          (reference "R207") (unit 1)
         )
       )
     )
@@ -4390,7 +4458,7 @@
   (symbol (lib_id "Interface_USB:USB2514B_Bi") (at 138.43 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b1979315-da0f-4a89-9bd3-cf6659a3fd12)
-    (property "Reference" "U302" (at 154.94 96.52 0)
+    (property "Reference" "U202" (at 154.94 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "USB2514B_Bi" (at 151.13 171.45 0)
@@ -4442,7 +4510,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "U302") (unit 1)
+          (reference "U202") (unit 1)
         )
       )
     )
@@ -4451,7 +4519,7 @@
   (symbol (lib_id "Device:C") (at 21.59 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b2485d17-290d-47a1-9665-5463b07cf12e)
-    (property "Reference" "C301" (at 22.86 154.94 0)
+    (property "Reference" "C201" (at 22.86 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10p" (at 22.86 160.02 0)
@@ -4468,7 +4536,58 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C301") (unit 1)
+          (reference "C201") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 173.99 137.16 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b5429383-e35b-4130-b440-10d96a8fc68d)
+    (property "Reference" "R215" (at 173.99 134.62 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10k" (at 177.8 139.7 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 173.99 138.938 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 173.99 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d9fcc690-e1cb-431c-a830-6bcc04636ca1))
+    (pin "2" (uuid 217fe810-39c3-425e-a85b-b3db7eb565c5))
+    (instances
+      (project "sam9260_qfp"
+        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
+          (reference "R215") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 182.88 140.97 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b8ec6411-b873-482f-b9be-13743c9b3aab)
+    (property "Reference" "#PWR0220" (at 182.88 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 182.88 146.05 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 182.88 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 182.88 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 80c10ec6-fcc2-4d64-920f-db6f4415fb46))
+    (instances
+      (project "sam9260_qfp"
+        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
+          (reference "#PWR0220") (unit 1)
         )
       )
     )
@@ -4477,7 +4596,7 @@
   (symbol (lib_id "power:GND") (at 85.09 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bba11a97-bbb1-4156-ac68-cb2d72eaba9e)
-    (property "Reference" "#PWR0157" (at 85.09 134.62 0)
+    (property "Reference" "#PWR0179" (at 85.09 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 85.09 132.08 0)
@@ -4493,7 +4612,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0157") (unit 1)
+          (reference "#PWR0179") (unit 1)
         )
       )
     )
@@ -4502,7 +4621,7 @@
   (symbol (lib_id "power:+5V") (at 256.54 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bc8ba650-7936-4610-b2e0-c80aa8439ae7)
-    (property "Reference" "#PWR0142" (at 256.54 148.59 0)
+    (property "Reference" "#PWR0151" (at 256.54 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 256.54 140.97 0)
@@ -4518,7 +4637,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0142") (unit 1)
+          (reference "#PWR0151") (unit 1)
         )
       )
     )
@@ -4527,7 +4646,7 @@
   (symbol (lib_id "Device:C") (at 63.5 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bd49a6e5-39a2-426d-9889-249c9090e608)
-    (property "Reference" "C307" (at 64.77 154.94 0)
+    (property "Reference" "C207" (at 64.77 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n" (at 64.77 160.02 0)
@@ -4544,7 +4663,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C307") (unit 1)
+          (reference "C207") (unit 1)
         )
       )
     )
@@ -4553,7 +4672,7 @@
   (symbol (lib_id "power:GND") (at 78.74 173.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c788b914-91be-4a6c-872a-f24892a6d069)
-    (property "Reference" "#PWR0156" (at 78.74 180.34 0)
+    (property "Reference" "#PWR0171" (at 78.74 180.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 177.8 0)
@@ -4569,7 +4688,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0156") (unit 1)
+          (reference "#PWR0171") (unit 1)
         )
       )
     )
@@ -4578,7 +4697,7 @@
   (symbol (lib_id "power:GND") (at 190.5 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cc489456-1752-422f-910d-84bd35030a24)
-    (property "Reference" "#PWR0137" (at 190.5 64.77 0)
+    (property "Reference" "#PWR0157" (at 190.5 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 62.23 0)
@@ -4594,7 +4713,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0137") (unit 1)
+          (reference "#PWR0157") (unit 1)
         )
       )
     )
@@ -4603,7 +4722,7 @@
   (symbol (lib_id "power:GND") (at 247.65 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cf8887a1-9813-4be5-9e0e-299bc97ba8ea)
-    (property "Reference" "#PWR0149" (at 241.3 54.61 0)
+    (property "Reference" "#PWR0152" (at 241.3 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 242.57 55.88 90)
@@ -4619,7 +4738,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0149") (unit 1)
+          (reference "#PWR0152") (unit 1)
         )
       )
     )
@@ -4628,7 +4747,7 @@
   (symbol (lib_id "Device:C") (at 250.19 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d370b1d0-7c52-41b1-84f6-6c58bf655f39)
-    (property "Reference" "C320" (at 251.46 124.46 0)
+    (property "Reference" "C220" (at 251.46 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100u" (at 251.46 129.54 0)
@@ -4645,7 +4764,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C320") (unit 1)
+          (reference "C220") (unit 1)
         )
       )
     )
@@ -4654,7 +4773,7 @@
   (symbol (lib_id "Device:C") (at 50.8 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d62c9b43-9676-4420-ab61-c4868f44320a)
-    (property "Reference" "C305" (at 52.07 154.94 0)
+    (property "Reference" "C205" (at 52.07 154.94 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n" (at 52.07 160.02 0)
@@ -4671,7 +4790,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C305") (unit 1)
+          (reference "C205") (unit 1)
         )
       )
     )
@@ -4680,7 +4799,7 @@
   (symbol (lib_id "Power_Protection:USBLC6-2SC6") (at 228.6 149.86 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d91206eb-1b08-4fdc-8dde-1306c8f87ff2)
-    (property "Reference" "U306" (at 222.25 158.75 90)
+    (property "Reference" "U206" (at 222.25 158.75 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "USBLC6-2SC6" (at 210.82 140.97 90)
@@ -4701,7 +4820,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "U306") (unit 1)
+          (reference "U206") (unit 1)
         )
       )
     )
@@ -4710,7 +4829,7 @@
   (symbol (lib_id "power:+5V") (at 256.54 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dca88e8f-8a2b-4cff-be0d-194974c15485)
-    (property "Reference" "#PWR0127" (at 256.54 123.19 0)
+    (property "Reference" "#PWR0164" (at 256.54 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 256.54 115.57 0)
@@ -4726,7 +4845,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0127") (unit 1)
+          (reference "#PWR0164") (unit 1)
         )
       )
     )
@@ -4735,7 +4854,7 @@
   (symbol (lib_id "Device:C") (at 191.77 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dd18ebf3-4d13-499c-8678-4c1eb7b35389)
-    (property "Reference" "C317" (at 194.31 95.25 0)
+    (property "Reference" "C217" (at 194.31 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2u2" (at 194.31 97.79 0)
@@ -4752,7 +4871,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C317") (unit 1)
+          (reference "C217") (unit 1)
         )
       )
     )
@@ -4761,7 +4880,7 @@
   (symbol (lib_id "2023-03-19_05-17-35:MIC2099-1YMT-TR") (at 198.12 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e4afc439-374b-4b8d-ae76-1f5383781d38)
-    (property "Reference" "U303" (at 233.68 22.86 0)
+    (property "Reference" "U203" (at 233.68 22.86 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "MIC2099-1YMT-TR" (at 233.68 26.67 0)
@@ -4783,7 +4902,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "U303") (unit 1)
+          (reference "U203") (unit 1)
         )
       )
     )
@@ -4792,7 +4911,7 @@
   (symbol (lib_id "power:+5V") (at 243.84 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e7c6a2d1-a8ad-4ba5-abc8-95b3f3db917c)
-    (property "Reference" "#PWR0128" (at 243.84 123.19 0)
+    (property "Reference" "#PWR0162" (at 243.84 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 243.84 115.57 0)
@@ -4808,7 +4927,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0128") (unit 1)
+          (reference "#PWR0162") (unit 1)
         )
       )
     )
@@ -4817,7 +4936,7 @@
   (symbol (lib_id "Device:R") (at 199.39 52.07 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ec28a63e-aff8-4a02-a7f3-9bcf5742af8d)
-    (property "Reference" "R310" (at 203.2 48.26 0)
+    (property "Reference" "R210" (at 203.2 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DNP_12k" (at 208.28 55.88 0)
@@ -4834,7 +4953,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R310") (unit 1)
+          (reference "R210") (unit 1)
         )
       )
     )
@@ -4843,7 +4962,7 @@
   (symbol (lib_id "Device:C") (at 116.84 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ec6898e9-e5e5-4b8e-bea8-ee7c9581fae1)
-    (property "Reference" "C315" (at 118.11 83.82 0)
+    (property "Reference" "C215" (at 118.11 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 118.11 88.9 0)
@@ -4860,7 +4979,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C315") (unit 1)
+          (reference "C215") (unit 1)
         )
       )
     )
@@ -4869,7 +4988,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 36.83 110.49 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f28e9fdd-0cac-4239-afd1-865e82b954cd)
-    (property "Reference" "FB301" (at 36.83 107.95 90)
+    (property "Reference" "FB201" (at 36.83 107.95 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120R" (at 39.37 111.76 90)
@@ -4886,7 +5005,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "FB301") (unit 1)
+          (reference "FB201") (unit 1)
         )
       )
     )
@@ -4895,7 +5014,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 265.43 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4b1dce8-c57c-487e-930d-1ebe3317e1d1)
-    (property "Reference" "#FLG0301" (at 265.43 154.305 0)
+    (property "Reference" "#FLG0101" (at 265.43 154.305 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 265.43 152.4 0)
@@ -4911,7 +5030,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#FLG0301") (unit 1)
+          (reference "#FLG0101") (unit 1)
         )
       )
     )
@@ -4920,7 +5039,7 @@
   (symbol (lib_id "Device:R") (at 97.79 167.64 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f78de565-5f9a-4f12-afd4-7dcd3d684d2c)
-    (property "Reference" "R308" (at 101.6 165.1 0)
+    (property "Reference" "R208" (at 101.6 165.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 102.87 171.45 0)
@@ -4937,33 +5056,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R308") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 22.86 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f7b56555-facf-46d0-8b3a-3d5c45854873)
-    (property "Reference" "R301" (at 24.13 92.71 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100k" (at 24.13 95.25 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 21.082 93.98 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 22.86 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2add9d5a-f5cf-475e-a840-f41e6cfbab95))
-    (pin "2" (uuid d4e4d21c-7676-4248-bc7d-a3495870bb17))
-    (instances
-      (project "sam9260_qfp"
-        (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "R301") (unit 1)
+          (reference "R208") (unit 1)
         )
       )
     )
@@ -4972,7 +5065,7 @@
   (symbol (lib_id "Device:C") (at 256.54 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f8fa48b6-09bc-4a33-ac44-463c56a1e732)
-    (property "Reference" "C323" (at 257.81 149.86 0)
+    (property "Reference" "C223" (at 257.81 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100u" (at 257.81 154.94 0)
@@ -4989,7 +5082,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C323") (unit 1)
+          (reference "C223") (unit 1)
         )
       )
     )
@@ -4998,7 +5091,7 @@
   (symbol (lib_id "Device:LED") (at 270.51 93.98 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f96017b1-2480-4ff8-afee-be9516f2c993)
-    (property "Reference" "D302" (at 267.97 93.98 90)
+    (property "Reference" "D202" (at 267.97 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "GREEN" (at 266.7 96.52 90)
@@ -5015,7 +5108,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "D302") (unit 1)
+          (reference "D202") (unit 1)
         )
       )
     )
@@ -5024,7 +5117,7 @@
   (symbol (lib_id "Device:C") (at 243.84 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fa11fc4d-2f66-4c59-96d7-9fe4f9559057)
-    (property "Reference" "C319" (at 245.11 149.86 0)
+    (property "Reference" "C219" (at 245.11 149.86 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 245.11 154.94 0)
@@ -5041,7 +5134,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "C319") (unit 1)
+          (reference "C219") (unit 1)
         )
       )
     )
@@ -5050,7 +5143,7 @@
   (symbol (lib_id "power:+5V") (at 185.42 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe56b0fe-004d-4fee-8cd8-e1ba73ef7bc8)
-    (property "Reference" "#PWR0139" (at 185.42 39.37 0)
+    (property "Reference" "#PWR0159" (at 185.42 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 185.42 31.75 0)
@@ -5066,7 +5159,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0139") (unit 1)
+          (reference "#PWR0159") (unit 1)
         )
       )
     )
@@ -5075,7 +5168,7 @@
   (symbol (lib_id "power:GND") (at 279.4 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe7d1ec7-1bfa-45bc-90d1-822c36b8ab66)
-    (property "Reference" "#PWR0144" (at 279.4 88.9 0)
+    (property "Reference" "#PWR0156" (at 279.4 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 279.4 86.36 0)
@@ -5091,7 +5184,7 @@
     (instances
       (project "sam9260_qfp"
         (path "/e0cfbfe5-8f1c-42d1-90c4-1cf34dee8164/bce39d71-ecb5-4cc0-94f6-7964eb4ed93c"
-          (reference "#PWR0144") (unit 1)
+          (reference "#PWR0156") (unit 1)
         )
       )
     )
